@@ -15,4 +15,8 @@ export default defineNuxtConfig({
       { name: 'format-detection', content: 'telephone=no' },
     ],
   },
+  publicRuntimeConfig: {
+    supabaseUrl: process.env.SUPABASE_URL,
+    supabasePublicKey: process.env.SUPABASE_KEY,
+  },
 });
